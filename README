@@ -1,0 +1,53 @@
+doronbruder
+
+204917629
+
+Doron Bruder
+
+ Websites:"stackoverflow
+"
+No special comments
+
+Part3:big O notation:
+‪------------------------------------------------------------------------------------------‬
+is_prime: Time complexity is O(sqrt(n)
+
+Explanation: In the worst case we have to go over each number
+ from sqrt(n) to 1 
+And for each number to check if 
+n divided by it(constant time for each check)
+
+
+‪------------------------------------------------------------------------------------------‬
+print_no_repetition_sequences: 
+The complexity is  O((n!)
+Where n is the maximum of the length 
+of the word we want to create and the length of the char list  
+‪(‬Which are equal In worst case)
+
+Explanation: Assume that the  char list  is in length of k and
+ that the length of the string we wanna create 
+In the the worst case when n=k: 
+the most inner line in the recursive function is 
+The recursive call itself 
+and the line new_prefix=prefix+char
+First call it's called n times 
+second call it's called n-1 .. and so on till 1 
+‪------------------------------------------------------------------------------------------‬
+flood_fill: Time complexity is O(n*m)
+
+ Explanation: In the worst case when we're starting 
+from the p(0,0) and all the chars 
+in the image are empty -'.' we have to 
+go over all the chars in the image via
+ recursive calls and in each recursive call
+ run that line: "image[x][y] = full_char"
+which takes a constant time  
+so in image of a size n*m there will be m*n calls 
+and we get time complexity of O(n*m)
+  
+
+
+
+
+ 
